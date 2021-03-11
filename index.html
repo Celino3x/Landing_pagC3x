@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" >
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>C3x | Website</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Incio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Hi,<br> I’m <span>@Celino3x</span> </h2>
+                <p>Sou desenvolvedor back-end / front-end. Tenho forte conhecimento em PHP, JavaScript, HTML5, CSS3, Bootstrap e WordPress. Conhecimento em SQL, MySQL e PostgreSQL. Atualmente estou fortalecendo meus conhecimentos em PHP7/8 e Bootstrap 5. Tenho conhecimento em Java, Pascal e Java Web.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/tel.png" alt="" class="smart">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/html-5.png" onclick="imgSlider('img/tel.png');changeCircleColor('#08263f')"></li>
+            <li><img src="img/css.png" onclick="imgSlider('img/tablet.png');changeCircleColor('#165a92')"></li>
+            <li><img src="img/php.png" onclick="imgSlider('img/tel.png');changeCircleColor('#a81743')"></li>
+        </ul>
+        <ul class="sci">
+           <li><a href="https://www.facebook.com/celino3x"><img src="img/face.png" alt=""></a></li>
+           <li><a href="https://www.instagram.com/celino3x/"><img src="img/insta.png" alt=""></a></li>
+           <li><a href="https://github.com/Celino3x"><img src="img/git.png" alt=""></a></li>
+           <li><a href="https://api.whatsapp.com/send/?phone=5521980834347&text&app_absent=0"><img src="img/whats.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.smart').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
