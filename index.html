@@ -1,60 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" >
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <title>C3x | Website</title>
-</head>
-<body>
-    <section>
-        <div class="circle">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilizar.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="" height="50" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#sobre" class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contato" class="nav-link text-primary" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      </nav>
+
+      <div class="circle">
+
+      </div>
+
+      <div class="container content">
+        <div class="textBox">
+            <h2>Hi,<br> I’m <span>@Celino3x</span> </h2>
+            <p>Sou desenvolvedor back-end / front-end. Tenho forte conhecimento em PHP, JavaScript, HTML5, CSS3, Bootstrap e WordPress. Conhecimento em SQL, MySQL e PostgreSQL. Atualmente estou fortalecendo meus conhecimentos em PHP7/8 e Bootstrap 5. Tenho conhecimento em Java, Pascal e Java Web.</p>
+            <a href="#">Saiba mais</a>
 
         </div>
-        <header>
-            <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
-            <ul>
-                <li><a href="#">Incio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>Hi,<br> I’m <span>@Celino3x</span> </h2>
-                <p>Sou desenvolvedor back-end / front-end. Tenho forte conhecimento em PHP, JavaScript, HTML5, CSS3, Bootstrap e WordPress. Conhecimento em SQL, MySQL e PostgreSQL. Atualmente estou fortalecendo meus conhecimentos em PHP7/8 e Bootstrap 5. Tenho conhecimento em Java, Pascal e Java Web.</p>
-                <a href="#">Saiba mais</a>
-            </div>
-            <div class="imgbox">
-                <img src="img/tel.png" alt="" class="smart">
-            </div>
+
+        <section>
+
+          <div class="imgbox">
+            <img src="img/tel.png" alt="" class="smart">
         </div>
-        <ul class="thumb">
-            <li><img src="img/html-5.png" onclick="imgSlider('img/tel.png');changeCircleColor('#08263f')"></li>
-            <li><img src="img/css.png" onclick="imgSlider('img/tablet.png');changeCircleColor('#165a92')"></li>
-            <li><img src="img/php.png" onclick="imgSlider('img/tel.png');changeCircleColor('#a81743')"></li>
-        </ul>
-        <ul class="sci">
-           <li><a href="https://www.facebook.com/celino3x"><img src="img/face.png" alt=""></a></li>
-           <li><a href="https://www.instagram.com/celino3x/"><img src="img/insta.png" alt=""></a></li>
-           <li><a href="https://github.com/Celino3x"><img src="img/git.png" alt=""></a></li>
-           <li><a href="https://api.whatsapp.com/send/?phone=5521980834347&text&app_absent=0"><img src="img/whats.png" alt=""></a></li>
-        </ul>
-    </section>
+    </div>
+       <ul class="sci">
+       <li><a href="https://www.facebook.com/celino3x"><img src="img/face.png" alt=""></a></li>
+       <li><a href="https://www.instagram.com/celino3x/"><img src="img/insta.png" alt=""></a></li>
+       <li><a href="https://github.com/Celino3x"><img src="img/git.png" alt=""></a></li>
+       <li><a href="https://api.whatsapp.com/send/?phone=5521980834347&text&app_absent=0"><img src="img/whats.png" alt=""></a></li>
+    </ul>
+        </section>
+
+
+        <!--<section class="container" id="sobre"> 
+          <div class="container">
+            <div class="row custom-selection d-flex align-items-center">
+                <div class="col-12 col-lg-4">
+                    <h2>Team Work</h2>
+                    <h3>Process</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nihil veniam sit maiores sint nam aliquam mollitia dolore quibusdam quod sapiente, accusantium quam optio incidunt nulla aut tempore error. Distinctio!</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+            </div>
+      </div>
+        </section>
+
+        <section class="container" id="contato"> 
+          <div class="container">
+            <div class="row custom-selection d-flex align-items-center">
+                <div class="col-12 col-lg-4">
+                    <h2>Team Work</h2>
+                    <h3>Process</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nihil veniam sit maiores sint nam aliquam mollitia dolore quibusdam quod sapiente, accusantium quam optio incidunt nulla aut tempore error. Distinctio!</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+            </div>
+      </div>
+        </section>-->
+
+      
+    <!--<h2>Hi,<br> I’m <span>@Celino3x</span> </h2>-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
 
     <script type="text/javascript">
-        function imgSlider(anything){
-            document.querySelector('.smart').src = anything;
-        }
+      function imgSlider(anything){
+          document.querySelector('.smart').src = anything;
+      }
 
-        function changeCircleColor(color){
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-    </script>
-</body>
+      function changeCircleColor(color){
+          const circle = document.querySelector('.circle');
+          circle.style.background = color;
+      }
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+   
+  </body>
 </html>
